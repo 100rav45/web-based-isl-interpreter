@@ -1,0 +1,137 @@
+/* ==========================================================
+   PAGE
+========================================================== */
+
+.predict-container{
+
+    max-width:1100px;
+
+    margin:60px auto 100px;
+
+    padding:0 20px;
+
+    text-align:center;
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.page-header{
+
+    margin-bottom:40px;
+
+}
+
+.page-header h1{
+
+    font-size:48px;
+
+    font-weight:800;
+
+    color:#111827;
+
+    margin-bottom:15px;
+
+}
+
+.page-header p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#6b7280;
+
+}
+
+/* ==========================================================
+   BUTTON
+========================================================== */
+
+.predict-btn{
+
+    margin-top:30px;
+
+    padding:16px 42px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:all .3s ease;
+
+    box-shadow:0 10px 24px rgba(37,99,235,.25);
+
+}
+
+.predict-btn:hover:not(:disabled){
+
+    background:#1d4ed8;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 14px 28px rgba(37,99,235,.35);
+
+}
+
+.predict-btn:disabled{
+
+    background:#94a3b8;
+
+    cursor:not-allowed;
+
+    box-shadow:none;
+
+}
+
+/* ==========================================================
+   RESULT
+========================================================== */
+
+.prediction-section{
+
+    margin-top:45px;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+.page-header h1{
+
+    font-size:36px;
+
+}
+
+.page-header p{
+
+    font-size:16px;
+
+}
+
+.predict-btn{
+
+    width:100%;
+
+}
+
+}

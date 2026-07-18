@@ -1,0 +1,247 @@
+.webcam-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+    background:#f5f7fb;
+}
+
+/* Main Card */
+
+.prediction-card{
+    width:100%;
+    max-width:1800px;
+    background:#fff;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 35px rgba(42,18,18,.15);
+}
+
+/* Header */
+
+.page-title{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.page-subtitle{
+    text-align:center;
+    color:#666;
+    margin-bottom:35px;
+}
+
+.section-title{
+    width:100%;
+    text-align:center;
+    font-size:24px;
+    font-weight:700;
+    color:#1f2937;
+    margin-bottom:15px;
+}
+
+/* ========================= */
+/* Dashboard Layout */
+/* ========================= */
+
+.webcam-layout{
+    display:grid;
+    grid-template-columns:1.6fr 1fr;
+    gap:40px;
+    align-items:start;
+}
+
+/* Left */
+
+.camera-panel{
+    display:flex;
+    flex-direction:column;
+}
+
+/* Webcam */
+
+.webcam-container{
+    position:relative;
+    width:100%;
+    overflow:hidden;
+    border-radius:18px;
+    background:#111;
+    aspect-ratio:16/9;
+    border:3px solid #2563eb;
+    box-shadow:0 0 25px rgba(37,99,235,.20);
+}
+
+.webcam-feed{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+/* Status */
+
+.status-row{
+    margin-top:20px;
+    text-align:center;
+}
+
+.status{
+    display:inline-block;
+    padding:12px 28px;
+    border-radius:30px;
+    font-weight:600;
+    font-size:17px;
+}
+
+.ready{
+    background:#e8f5e9;
+    color:#2e7d32;
+}
+
+.capture{
+    background:#fff8e1;
+    color:#ef6c00;
+}
+
+.loading{
+    background:#e3f2fd;
+    color:#1565c0;
+}
+
+/* Button */
+
+.capture-btn{
+    margin-top:25px;
+    padding:18px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(90deg,#2563eb,#3b82f6);
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.capture-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(37,99,235,.35);
+}
+
+.capture-btn:disabled{
+    opacity:.7;
+    cursor:not-allowed;
+}
+
+/* Countdown */
+
+.countdown-overlay{
+    position:absolute;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:120px;
+    font-weight:900;
+    color:#fff;
+    letter-spacing:4px;
+    background:rgba(0,0,0,.45);
+    text-shadow:0 0 25px rgba(255,255,255,.8);
+}
+
+/* Flash */
+
+.camera-flash{
+    position:absolute;
+    inset:0;
+    background:#fff;
+    opacity:.85;
+    animation:flash .2s ease;
+}
+
+@keyframes flash{
+    from{opacity:.9;}
+    to{opacity:0;}
+}
+
+/* PredictionCard */
+
+.prediction-panel{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.prediction-panel .prediction-card{
+    width:100%;
+    margin:0;
+    height:auto;
+    margin-top:18px;
+}
+
+/* Empty State */
+
+.empty-result{
+    width:100%;
+    min-height:350px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:#fff;
+    border-radius:18px;
+    border:2px dashed #d6d6d6;
+    color:#666;
+    text-align:center;
+    padding:30px;
+}
+
+.empty-icon{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.empty-result h2{
+    margin-bottom:10px;
+}
+
+.tips-box{
+    background:#eef6ff;
+    border-left:5px solid #2563eb;
+    padding:18px 22px;
+    border-radius:12px;
+    margin:30px 0;
+}
+
+.tips-box h3{
+    margin-bottom:12px;
+    color:#1d4ed8;
+    font-size:18px;
+}
+
+.tips-row{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:10px;
+}
+
+.tips-row span{
+    background:#fff;
+    padding:10px 16px;
+    border-radius:8px;
+    font-weight:600;
+    color:#374151;
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+/* Responsive */
+
+@media (max-width:1000px){
+
+    .webcam-layout{
+        grid-template-columns:1fr;
+    }
+
+}

@@ -1,0 +1,61 @@
+# -----------------------
+# Python
+# -----------------------
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# -----------------------
+# Environment Variables
+# -----------------------
+.env
+.env.*
+
+# -----------------------
+# Node.js / React
+# -----------------------
+node_modules/
+dist/
+build/
+
+# -----------------------
+# IDE
+# -----------------------
+.vscode/
+.idea/
+
+# -----------------------
+# OS Files
+# -----------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------
+# Archives
+# -----------------------
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# -----------------------
+# Logs
+# -----------------------
+*.log
+
+# -----------------------
+# Python Packaging
+# -----------------------
+*.egg-info/
+
+# Training data
+data/datasets/
+data/isl_landmarks.csv
+
+# Temporary results
+results/

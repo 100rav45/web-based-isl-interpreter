@@ -1,0 +1,344 @@
+.upload-area{
+
+    width:520px;
+    height:360px;
+
+    margin:auto;
+
+    background:white;
+
+    border:3px dashed #2563eb;
+
+    border-radius:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 20px 40px rgba(37,99,235,.12);
+
+}
+
+.upload-area:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 25px 55px rgba(37,99,235,.20);
+
+}
+
+.drag-active{
+
+    border-color:#3b82f6;
+
+    background:#eff6ff;
+
+    transform:scale(1.02);
+
+    box-shadow:0 25px 60px rgba(59,130,246,.30);
+
+}
+
+.upload-icon{
+
+    font-size:70px;
+
+    margin-bottom:20px;
+
+}
+
+.upload-area h2{
+
+    color:#1f2937;
+
+    margin-bottom:10px;
+
+}
+
+.upload-area p{
+
+    color:#666;
+
+}
+
+.preview{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    border-radius:20px;
+
+}/* ==========================================================
+   UPLOADER CONTAINER
+========================================================== */
+
+.uploader-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin:40px 0;
+
+}
+
+/* ==========================================================
+   UPLOAD AREA
+========================================================== */
+
+.upload-area{
+
+    width:560px;
+
+    min-height:380px;
+
+    padding:35px;
+
+    background:white;
+
+    border:3px dashed #2563eb;
+
+    border-radius:24px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:all .35s ease;
+
+    box-shadow:0 20px 45px rgba(37,99,235,.12);
+
+}
+
+.upload-area:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 28px 60px rgba(37,99,235,.18);
+
+}
+
+/* ==========================================================
+   DRAG ACTIVE
+========================================================== */
+
+.drag-active{
+
+    background:#eff6ff;
+
+    border-color:#3b82f6;
+
+    transform:scale(1.02);
+
+    box-shadow:0 28px 65px rgba(59,130,246,.28);
+
+}
+
+/* ==========================================================
+   ICON
+========================================================== */
+
+.upload-icon{
+
+    width:110px;
+
+    height:110px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #60a5fa
+    );
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:48px;
+
+    color:white;
+
+    margin-bottom:25px;
+
+}
+
+/* ==========================================================
+   TEXT
+========================================================== */
+
+.upload-area h2{
+
+    color:#111827;
+
+    font-size:28px;
+
+    margin-bottom:12px;
+
+}
+
+.upload-area p{
+
+    color:#6b7280;
+
+    font-size:16px;
+
+    margin-bottom:20px;
+
+}
+
+.upload-divider{
+
+    margin:18px 0;
+
+    color:#9ca3af;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+}
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.browse-btn,
+
+.change-image-btn{
+
+    padding:14px 30px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.browse-btn:hover,
+
+.change-image-btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-2px);
+
+}
+
+/* ==========================================================
+   IMAGE PREVIEW
+========================================================== */
+
+.preview{
+
+    width:100%;
+
+    max-height:260px;
+
+    object-fit:contain;
+
+    border-radius:18px;
+
+    margin-bottom:18px;
+
+}
+
+.file-name{
+
+    font-size:15px;
+
+    color:#4b5563;
+
+    margin-bottom:18px;
+
+    font-weight:500;
+
+    word-break:break-word;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:768px){
+
+.upload-area{
+
+    width:100%;
+
+    min-height:320px;
+
+    padding:25px;
+
+}
+
+.upload-icon{
+
+    width:90px;
+
+    height:90px;
+
+    font-size:40px;
+
+}
+
+.upload-area h2{
+
+    font-size:22px;
+
+}
+
+.upload-area p{
+
+    font-size:15px;
+
+}
+
+.preview{
+
+    max-height:220px;
+
+}
+
+.browse-btn,
+
+.change-image-btn{
+
+    width:100%;
+
+}
+
+}
