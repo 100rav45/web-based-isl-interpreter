@@ -15,7 +15,7 @@ idna==3.18
 joblib==1.5.3
 mediapipe==0.10.35
 numpy==1.26.4
-opencv-contrib-python-headless==5.0.0.93
+opencv-contrib-python-headless==4.10.0.84
 packaging==26.2
 pandas==2.3.3
 pillow==12.3.0
