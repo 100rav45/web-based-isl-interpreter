@@ -23,11 +23,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.middleware("http")(
-    logging_middleware
-)
+#app.middleware("http")(
+#    logging_middleware
+#)
 
-app.add_exception_handler(Exception, global_exception_handler)
+#app.add_exception_handler(Exception, global_exception_handler)
 
 @app.on_event("startup")
 def startup():
