@@ -26,9 +26,22 @@
 =========================== */
 
 .logo{
+
     display:flex;
     align-items:center;
     gap:14px;
+
+    cursor:pointer;
+
+    text-decoration:none;
+    color:white;
+
+}
+
+.logo:visited{
+
+    color:white;
+
 }
 
 .logo-image{

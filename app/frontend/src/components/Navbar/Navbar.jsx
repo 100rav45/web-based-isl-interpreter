@@ -10,7 +10,11 @@ export default function Navbar() {
     return (
         <nav className="navbar">
 
-            <div className="logo">
+            <NavLink
+                to="/"
+                className="logo"
+                onClick={() => setMenuOpen(false)}
+            >
 
                 <img
                     src={logo}
@@ -30,7 +34,7 @@ export default function Navbar() {
 
                 </div>
 
-            </div>
+            </NavLink>
 
             <div
                 className={`nav-links ${menuOpen ? "open" : ""}`}
