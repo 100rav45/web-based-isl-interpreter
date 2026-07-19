@@ -3,9 +3,9 @@
     "algorithm": "Random Forest",
     "model_file": "random_forest_model.pkl",
     "label_encoder": "label_encoder.pkl",
-    "accuracy": 0.99933,
-    "training_samples": 31361,
-    "testing_samples": 10454,
+    "accuracy": 0.977906,
+    "training_samples": 8825,
+    "testing_samples": 2942,
     "features": 126,
     "classes": 36,
     "class_labels": [
@@ -46,5 +46,5 @@
         "Y",
         "Z"
     ],
-    "created_at": "2026-07-17 15:14:49"
+    "created_at": "2026-07-19 21:31:32"
 }

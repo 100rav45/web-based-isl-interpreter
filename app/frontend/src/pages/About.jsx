@@ -159,7 +159,7 @@ export default function About() {
 
                             <div className="stat-card">
 
-                                <h3>99.93%</h3>
+                                <h3>&gt;70%</h3>
 
                                 <p>Model Accuracy</p>
 

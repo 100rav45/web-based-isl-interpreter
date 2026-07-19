@@ -88,7 +88,7 @@ export default function Home() {
 
                         <div className="stat-card">
 
-                            <h2>99.93%</h2>
+                            <h2>&gt;70%</h2>
 
                             <p>Accuracy</p>
 
