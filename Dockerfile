@@ -15,6 +15,11 @@ RUN apt-get update && apt-get install -y \
     libglvnd0 \
     libegl1 \
     libgles2 \
+    libsm6 \
+    libxext6 \
+    libxrender1 \
+    libgl1-mesa-glx \
+    libglu1-mesa \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements first for better build caching
