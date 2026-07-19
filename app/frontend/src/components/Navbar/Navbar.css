@@ -1,3 +1,7 @@
+/* ===========================
+   Navbar
+=========================== */
+
 .navbar{
     height:75px;
     background:#111827;
@@ -14,107 +18,160 @@
     z-index:1000;
 
     box-shadow:0 8px 24px rgba(0,0,0,.18);
-    backdrop-filter:blur(12px);
-
     border-bottom:1px solid rgba(255,255,255,.08);
 }
 
-/* ---------- Logo ---------- */
+/* ===========================
+   Logo
+=========================== */
 
 .logo{
-
     display:flex;
     align-items:center;
     gap:14px;
-
-    cursor:pointer;
-
 }
 
 .logo-image{
-
     width:54px;
     height:54px;
-
     object-fit:contain;
-
     transition:.35s;
 }
 
 .logo:hover .logo-image{
-
     transform:rotate(-5deg) scale(1.08);
-
 }
 
 .logo-text{
-
     display:flex;
     flex-direction:column;
 }
 
 .logo-title{
-
     font-size:28px;
     font-weight:700;
-    letter-spacing:.4px;
-
 }
 
 .logo-subtitle{
-
     font-size:12px;
-
     color:#9ca3af;
-
-    letter-spacing:1px;
-
     text-transform:uppercase;
-
+    letter-spacing:1px;
 }
 
-/* ---------- Navigation ---------- */
+/* ===========================
+   Navigation
+=========================== */
 
 .nav-links{
-
     display:flex;
-
     align-items:center;
-
     gap:12px;
-
 }
 
 .nav-links a{
-
     color:white;
-
     text-decoration:none;
-
     font-size:16px;
-
     font-weight:500;
-
     padding:10px 18px;
-
     border-radius:10px;
-
-    transition:all .25s ease;
-
+    transition:.25s;
 }
 
 .nav-links a:hover{
-
     background:rgba(255,255,255,.08);
-
-    transform:translateY(-2px);
-
 }
 
 .nav-links a.active{
-
     background:#2563eb;
-
     box-shadow:0 8px 18px rgba(37,99,235,.35);
+}
+
+/* ===========================
+   Hamburger
+=========================== */
+
+.menu-icon{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+    user-select:none;
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width:768px){
+
+    .navbar{
+
+        padding:0 18px;
+
+        height:70px;
+    }
+
+    .logo-image{
+
+        width:42px;
+        height:42px;
+    }
+
+    .logo-title{
+
+        font-size:18px;
+    }
+
+    .logo-subtitle{
+
+        font-size:9px;
+    }
+
+    .menu-icon{
+
+        display:block;
+    }
+
+    .nav-links{
+
+        position:absolute;
+
+        top:70px;
+        left:0;
+
+        width:100%;
+
+        background:#111827;
+
+        display:flex;
+        flex-direction:column;
+
+        gap:0;
+
+        max-height:0;
+
+        overflow:hidden;
+
+        transition:max-height .35s ease;
+    }
+
+    .nav-links.open{
+
+        max-height:320px;
+    }
+
+    .nav-links a{
+
+        width:100%;
+
+        padding:18px;
+
+        text-align:center;
+
+        border-radius:0;
+
+        border-top:1px solid rgba(255,255,255,.08);
+    }
 
 }

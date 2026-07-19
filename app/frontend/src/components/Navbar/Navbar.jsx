@@ -1,8 +1,12 @@
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 import logo from "../../assets/logo.png";
 
 export default function Navbar() {
+
+    const [menuOpen, setMenuOpen] = useState(false);
+
     return (
         <nav className="navbar">
 
@@ -28,24 +32,45 @@ export default function Navbar() {
 
             </div>
 
-            <div className="nav-links">
+            <div
+                className={`nav-links ${menuOpen ? "open" : ""}`}
+            >
 
-                <NavLink to="/">
+                <NavLink
+                    to="/"
+                    onClick={() => setMenuOpen(false)}
+                >
                     Home
                 </NavLink>
 
-                <NavLink to="/predict">
+                <NavLink
+                    to="/predict"
+                    onClick={() => setMenuOpen(false)}
+                >
                     Predict
                 </NavLink>
 
-                <NavLink to="/webcam">
+                <NavLink
+                    to="/webcam"
+                    onClick={() => setMenuOpen(false)}
+                >
                     Webcam
                 </NavLink>
 
-                <NavLink to="/about">
+                <NavLink
+                    to="/about"
+                    onClick={() => setMenuOpen(false)}
+                >
                     About
                 </NavLink>
 
+            </div>
+
+            <div
+                className="menu-icon"
+                onClick={() => setMenuOpen(!menuOpen)}
+            >
+                ☰
             </div>
 
         </nav>
